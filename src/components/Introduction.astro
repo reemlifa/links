@@ -1,24 +1,24 @@
 ---
 import { Image } from "astro:assets";
-
 import { SITE } from "@/siteConfig";
-
-import profilePicture from "@/assets/profile-picture.jpg";
+import icon from "@/assets/icon.png";
 ---
 
-<div class="mt-8 py-4">
-  <Image
-    src={profilePicture}
-    alt={SITE.name}
-    height={256}
-    width={256}
-    loading="eager"
-    draggable="false"
-    class="mx-auto size-32 rounded-full"
-  />
-  <h1 class="mt-4 text-center text-3xl font-semibold">{SITE.name}</h1>
+<div class="mt-4 py-4 sm:mt-8">
+  <a href={SITE.url}>
+    <Image
+      src={icon}
+      alt={SITE.name}
+      height={256}
+      width={256}
+      loading="eager"
+      draggable="false"
+      class="mx-auto size-24 sm:size-32"
+    />
+    <h1 class="mt-3 text-center text-2xl font-semibold sm:mt-4 sm:text-3xl">{SITE.name}</h1>
+  </a>
   <p
-    class="mt-1 text-balance text-center text-sm text-lightModeForegroundMuted dark:text-darkModeForegroundMuted"
+    class="mt-1 text-balance text-center text-xs text-white/90 sm:text-sm"
   >
     {SITE.bio}
   </p>

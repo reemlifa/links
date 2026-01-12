@@ -1,56 +1,77 @@
 {
-  "name": "Trevor Tyler Lee",
-  "bio": "Free, open source LinkTree alternative built with Astro & Tailwind CSS",
-  "profilePicture": "/profile-picture.jpg",
-  "url": "https://trevortylerlee.com",
+  "name": "Hack Club",
+  "bio": "a worldwide community of 25k+ high school hackers 🚀 tinkering & making everyday",
+  "url": "https://hackclub.com",
   "blog": true,
   "iconLinks": [
     {
       "id": "1728534577184",
       "icon": "link",
-      "url": "https://boogerbuttcheeks.com"
+      "url": "https://hackclub.com"
     },
     {
-      "id": "1728534577185",
-      "icon": "email",
-      "url": "mailto:ttl@trevortylerlee.com"
+      "id": "1728534577187",
+      "icon": "youtube",
+      "url": "https://www.youtube.com/@HackClubHQ"
     },
     {
       "id": "1728534577186",
       "icon": "github",
-      "url": "https://github.com/trevortylerlee"
+      "url": "https://github.com/hackclub"
     },
     {
       "id": "1728534577187",
-      "icon": "twitter",
-      "url": "https://twitter.com/boogerbuttcheek"
+      "icon": "instagram",
+      "url": "https://instagram.com/starthackclub"
+    },
+    {
+      "id": "1728534577187",
+      "icon": "tiktok",
+      "url": "https://tiktok.com/@starthackclub"
     }
   ],
   "customLinks": [
     {
       "id": "1728534585738",
-      "title": "🍌 donkey kong country on the snes",
-      "url": "https://youtu.be/7hgr-ZuzXng?si=v3dr9mu2cBL_D4ED"
+      "title": "Join our community!",
+      "url": "https://hack.club/slack"
     },
     {
       "id": "1728534585739",
-      "title": " Best macOS apps",
-      "url": "https://macintoshapps.com"
+      "title": "Get free stickers!",
+      "url": "https://hack.club/stickers"
+    }
+  ],
+  "featureCards": [
+    {
+      "id": "flavortown",
+      "title": "Flavortown",
+      "titleImage": "/assets/flavortown_logo.png",
+      "description": "Cook tasty personal projects, win free prizes!",
+      "buttonText": "Join Now",
+      "buttonUrl": "https://flavortown.hackclub.com/?ref=links",
+      "backgroundColor": "#8b5a4a",
+      "decorativeImage": "/assets/flavortown_chef.avif"
     },
     {
-      "id": "1728534585740",
-      "title": "💕 36 Questions To Fall In Love",
-      "url": "https://thirtysixquestions.org"
+      "id": "blueprint",
+      "title": "Blueprint",
+      "titleImage": "/assets/blueprint_logo.png",
+      "description": "Design a Hardware project and get up to $400 to make it real!",
+      "buttonText": "Join Now",
+      "buttonUrl": "https://blueprint.hackclub.com/?utm_source=links",
+      "backgroundColor": "#1a3a5c",
+      "decorativeImage": "/assets/blueprint_mascot.png",
+      "decorativeImageClass": "pointer-events-none absolute -bottom-12 -right-12 z-20 h-[130px] w-auto rotate-12 object-contain transition-transform group-hover:scale-[1.02]"
     },
     {
-      "id": "1728534585741",
-      "title": "SuperWeb Themes",
-      "url": "https://superwebthemes.com"
-    },
-    {
-      "id": "1728534585742",
-      "title": "♥ Donate",
-      "url": "https://donate.stripe.com/aEU6ow7VEf7u7sseUU"
+      "id": "hcb",
+      "title": "HCB",
+      "titleImage": "/assets/hcb.png",
+      "description": "Open-source neobank for nonprofits!",
+      "buttonText": "Apply today →",
+      "buttonUrl": "https://hackclub.com/fiscal-sponsorship/apply/",
+      "backgroundColor": "#893648"
     }
   ]
 }

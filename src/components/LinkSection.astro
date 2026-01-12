@@ -1,0 +1,16 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<div class="w-full">
+  <h2 class="mb-4 text-center text-sm font-semibold uppercase tracking-wider text-white">
+    {title}
+  </h2>
+  <ul class="grid gap-y-4">
+    <slot />
+  </ul>
+</div>

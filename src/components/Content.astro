@@ -4,20 +4,49 @@ import { SITE } from "@/siteConfig";
 import Introduction from "@/components/Introduction.astro";
 import IconLink from "@/components/IconLink.astro";
 import CustomLink from "@/components/CustomLink.astro";
+import LinkSection from "@/components/LinkSection.astro";
+import FeatureCard from "@/components/FeatureCard.astro";
 ---
 
 <Introduction />
-<ul class="flex justify-center gap-4 py-12">
+<ul class="flex flex-wrap justify-center gap-3 py-6 sm:gap-4">
   {
     SITE.iconLinks.map((link) => {
       return <IconLink url={link.url} icon={link.icon} />;
     })
   }
 </ul>
-<ul class="grid gap-y-6 pb-12 pt-4">
+<ul class="grid gap-y-4 pb-6 pt-2">
   {
     SITE.customLinks.map((link) => {
       return <CustomLink url={link.url}>{link.title}</CustomLink>;
     })
   }
 </ul>
+{
+  SITE.featureCards && SITE.featureCards.length > 0 && (
+    <div class="grid gap-4 pb-8 md:grid-cols-2">
+      {SITE.featureCards.map((card) => (
+        <FeatureCard
+          title={card.title}
+          titleImage={card.titleImage}
+          description={card.description}
+          buttonText={card.buttonText}
+          buttonUrl={card.buttonUrl}
+          backgroundColor={card.backgroundColor}
+          decorativeImage={card.decorativeImage}
+          decorativeImageClass={card.decorativeImageClass}
+        />
+      ))}
+    </div>
+  )
+}
+{
+  SITE.linkSections?.map((section) => (
+    <LinkSection title={section.title}>
+      {section.links.map((link) => (
+        <CustomLink url={link.url}>{link.title}</CustomLink>
+      ))}
+    </LinkSection>
+  ))
+}

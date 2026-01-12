@@ -6,39 +6,42 @@
   :root {
     color-scheme: light dark;
 
-    /* replace colors from here... */
-    --light-mode-background: 240 240 240;
-    --light-mode-foreground: 0 0 0;
-    --light-mode-foreground-muted: 50 50 50;
-    --light-mode-icon-link-outline: 50 50 50;
+    /* Hack Club branded colors */
+    /* Primary red: #ec3750 (236 55 80) */
+    /* Dark red: #d42d44 (212 45 68) */
+    --light-mode-background: 236 55 80; /* #ec3750 */
+    --light-mode-foreground: 255 255 255;
+    --light-mode-foreground-muted: 255 220 225;
+    --light-mode-icon-link-outline: 255 255 255;
     --light-mode-icon-link-background: 255 255 255;
-    --light-mode-icon-link-text: 0 0 0;
-    --light-mode-icon-link-outline-hover: 0 0 0;
-    --light-mode-icon-link-background-hover: 240 240 240;
-    --light-mode-icon-link-text-hover: 0 0 0;
-    --light-mode-custom-link-outline: 50 50 50;
+    --light-mode-icon-link-text: 236 55 80;
+    --light-mode-icon-link-outline-hover: 255 255 255;
+    --light-mode-icon-link-background-hover: 236 55 80;
+    --light-mode-icon-link-text-hover: 255 255 255;
+    --light-mode-custom-link-outline: 255 255 255;
     --light-mode-custom-link-background: 255 255 255;
-    --light-mode-custom-link-text: 0 0 0;
-    --light-mode-custom-link-outline-hover: 0 0 0;
-    --light-mode-custom-link-background-hover: 240 240 240;
-    --light-mode-custom-link-text-hover: 0 0 0;
+    --light-mode-custom-link-text: 236 55 80;
+    --light-mode-custom-link-outline-hover: 255 255 255;
+    --light-mode-custom-link-background-hover: 212 45 68;
+    --light-mode-custom-link-text-hover: 255 255 255;
 
-    --dark-mode-background: 10 10 10;
+    /* Dark mode: deeper red background */
+    --dark-mode-background: 236 55 80; /* #ec3750 */
     --dark-mode-foreground: 255 255 255;
-    --dark-mode-foreground-muted: 205 205 205;
-    --dark-mode-icon-link-outline: 205 205 205;
-    --dark-mode-icon-link-background: 0 0 0;
-    --dark-mode-icon-link-text: 255 255 255;
+    --dark-mode-foreground-muted: 255 200 210;
+    --dark-mode-icon-link-outline: 255 255 255;
+    --dark-mode-icon-link-background: 255 255 255;
+    --dark-mode-icon-link-text: 180 30 50;
     --dark-mode-icon-link-outline-hover: 255 255 255;
-    --dark-mode-icon-link-background-hover: 50 50 50;
+    --dark-mode-icon-link-background-hover: 140 20 40;
     --dark-mode-icon-link-text-hover: 255 255 255;
-    --dark-mode-custom-link-outline: 205 205 205;
-    --dark-mode-custom-link-background: 0 0 0;
-    --dark-mode-custom-link-text: 255 255 255;
+    --dark-mode-custom-link-outline: 255 255 255;
+    --dark-mode-custom-link-background: 255 255 255;
+    --dark-mode-custom-link-text: 180 30 50;
     --dark-mode-custom-link-outline-hover: 255 255 255;
-    --dark-mode-custom-link-background-hover: 50 50 50;
+    --dark-mode-custom-link-background-hover: 140 20 40;
     --dark-mode-custom-link-text-hover: 255 255 255;
-    /* ...to here */
+    /* End Hack Club colors */
   }
 
   body {
